@@ -31,11 +31,18 @@ footer a {
   text-decoration: none;
 }
 
-.programs-box {
+.list-group-item {
+  background-color: transparent; /* keep same background inside box */
+}
+
+.program-box {
   background: #ffffff;
   border: 1px solid #ddd;
   border-radius: 10px;
+  font-size: 1.1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
-.list-group-item {
-  background-color: transparent; /* keep same background inside box */
+.program-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
